@@ -1,0 +1,252 @@
+.main {
+  margin-top: 140px;
+}
+
+.main__content {
+  width: 558px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding-bottom: 40px;
+}
+
+.main__images {
+  position: relative;
+}
+
+.main__images img {
+  position: absolute;
+  z-index: -1;
+}
+
+.main__images .rocket {
+  width: 453px;
+  height: 580px;
+  left: 400px;
+}
+
+.main__images .circle-blue {
+  width: 180px;
+  height: 182px;
+  top: 60px;
+  left: -70px;
+}
+
+.main__images .circle-orange {
+  width: 177px;
+  height: 178px;
+  top: 500px;
+}
+
+.main__images .circle1 {
+  width: 89px;
+  height: 89px;
+  left: -200px;
+  top: 480px;
+}
+
+.main__images .circle2 {
+  width: 60px;
+  height: 60px;
+  top: 400px;
+  left: 40px;
+}
+
+.main__images .ray {
+  width: 116;
+  height: 103px;
+  left: -200px;
+  top: 200px;
+}
+
+.content {
+  width: 422px;
+  margin: 0 auto;
+}
+
+.content__title {
+  max-width: 304px;
+  margin: 0 auto;
+}
+
+.content__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title__activation {
+  padding-top: 50px;
+}
+
+.form__input {
+  padding: 10px 20px;
+  border: 2px solid #bfe5ec;
+  border-radius: 15px;
+  color: #1d71b8;
+  font-family: "Lugatype";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+  outline: none;
+  background: transparent;
+  margin-top: 30px;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #1d71b8;
+}
+
+.form__input:-ms-input-placeholder {
+  color: #1d71b8;
+}
+
+.form__input::-ms-input-placeholder {
+  color: #1d71b8;
+}
+
+.form__input::placeholder {
+  color: #1d71b8;
+}
+
+.form__button {
+  font-family: "Lugatype";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #1d6fb5;
+  margin-top: 30px;
+  padding: 9px;
+  -webkit-box-shadow: 0px 14px 21px rgba(29, 113, 184, 0.35);
+          box-shadow: 0px 14px 21px rgba(29, 113, 184, 0.35);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form__button:active {
+  background-color: #fff;
+  color: #1d6fb5;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-moz-outer-spin-button,
+input[type="number"]::-moz-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-ms-outer-spin-button,
+input[type="number"]::-ms-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 767.98px) {
+  .title__activation {
+    padding-top: 20px;
+  }
+  .main {
+    margin-top: 110px;
+  }
+  .main__content {
+    width: 502px;
+  }
+  .main__images .rocket {
+    width: 453px;
+    height: 580px;
+    left: 200px;
+  }
+  .main__images .circle-orange {
+    width: 177px;
+    height: 178px;
+    top: 450px;
+  }
+  .main__images .circle1 {
+    width: 89px;
+    height: 89px;
+    left: 200px;
+    top: 0px;
+  }
+  .main__images .circle2 {
+    width: 60px;
+    height: 60px;
+    top: 400px;
+    left: 40px;
+  }
+  .main__images .ray {
+    width: 116;
+    height: 103px;
+    left: -130px;
+    top: 200px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .title__activation {
+    padding-top: 20px;
+  }
+  .main {
+    margin-top: 110px;
+  }
+  .main__content {
+    width: 338px;
+    padding-bottom: 30px;
+  }
+  .main__images .rocket {
+    width: 268px;
+    height: 343px;
+    left: 150px;
+    top: 50px;
+  }
+  .main__images .circle-orange {
+    width: 99px;
+    height: 100px;
+    top: 420px;
+  }
+  .main__images .circle-blue {
+    width: 101px;
+    height: 102px;
+    top: 160px;
+    left: -20px;
+  }
+  .main__images .circle1 {
+    width: 49px;
+    height: 49px;
+    left: 180px;
+    top: 170px;
+  }
+  .main__images .circle2 {
+    display: none;
+  }
+  .main__images .ray {
+    display: none;
+  }
+  .content {
+    width: 298px;
+  }
+  .form__input {
+    padding: 8px 20px;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 20px;
+  }
+  .form__button {
+    font-size: 20px;
+    line-height: 23px;
+    padding: 9px;
+    margin-top: 20px;
+  }
+}

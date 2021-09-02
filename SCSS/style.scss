@@ -177,18 +177,33 @@ body._lock {
 			width: 100%;
 			justify-content: space-around;
 			position: fixed;
-			z-index: 80;
-		}
-		.header__logo {
-			order: 2;
-			margin-left: 45px;
+			z-index: 109;
+			background: url(../img/fon2.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: top;
 		}
 
+		.header__logo {
+			order: 2;
+			margin-left: 25px;
+			margin-top: 10px;
+		}
+
+		.header__logo img {
+			width: 60px;
+		}
+
+		.header__activation .header__activation-link {
+			font-size: 20px;
+			line-height: 25px;
+			padding: 8px 25px;
+		}
 		.header__activation {
 			order: 3;
 			margin-right: 5px;
 			margin-left: 5px;
-			margin-top: 49px;
+			margin-top: 30px;
 		}
 		.header__content {
 			order: 1;
@@ -199,17 +214,17 @@ body._lock {
 			display: block;
 			z-index: 55;
 			position: relative;
-			width: 56px;
-			height: 56px;
+			width: 46px;
+			height: 46px;
 			cursor: pointer;
-			margin-top: 45px;
+			margin-top: -20px;
 			background-color: rgba(255, 255, 255, 0.7);
 			border-radius: 10px;
 
 			& span,
 			&::before,
 			&::after {
-				left: 17px;
+				left: 12px;
 				position: absolute;
 				height: 3px;
 				width: 23px;
@@ -223,15 +238,15 @@ body._lock {
 			}
 
 			& span {
-				top: 26px;
+				top: 21px;
 				transform: scale(1) translate(0px, 0px);
 			}
 			&::before {
-				top: 19px;
+				top: 13px;
 			}
 
 			&::after {
-				bottom: 20px;
+				bottom: 14px;
 			}
 		}
 
@@ -244,7 +259,7 @@ body._lock {
 		}
 
 		.menu-ikon._active-menu::after {
-			transform: rotate(45deg) translate(-5px, -5px);
+			transform: rotate(45deg) translate(-5px, -7px);
 		}
 
 		.header__menu .header__list ._active-laungage {
@@ -262,7 +277,7 @@ body._lock {
 			height: 100%;
 			background: url(../img/fon2.jpg);
 			background-repeat: no-repeat;
-			background-size: 100% 100%;
+			background-size: cover;
 			transition: left 0.3s ease 0s;
 			overflow: auto;
 			z-index: 5;
@@ -271,13 +286,15 @@ body._lock {
 		.header__menu._active-menu {
 			left: 0;
 		}
+
 		.header__menu::before {
-			content: " ";
+			display: block;
+			content: "";
 			position: fixed;
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 105px;
+			height: 73px;
 			background: url(../img/fon2.jpg);
 			background-position: top;
 			background-repeat: no-repeat;
@@ -286,7 +303,7 @@ body._lock {
 		}
 
 		.header__list {
-			margin-top: 70px;
+			margin-top: 20px;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -294,7 +311,7 @@ body._lock {
 		}
 
 		.header__list > li {
-			margin-top: 30px;
+			margin-top: 0px;
 			&:hover {
 				text-decoration: none;
 			}
@@ -306,12 +323,12 @@ body._lock {
 
 		.header__link {
 			display: block;
-			font-size: 28px;
-			line-height: 32px;
+			font-size: 20px;
+			line-height: 25px;
 			text-align: center;
 			text-transform: uppercase;
 			width: 443px;
-			padding: 16px 0;
+			padding: 8px 0;
 			background-color: rgba(255, 255, 255, 0.7);
 			border-radius: 10px;
 			margin: 0;
@@ -324,23 +341,23 @@ body._lock {
 		.header__li1 {
 			display: inline-block;
 			position: relative;
-			top: 118px;
-			left: -50px;
+			top: 69px;
+			left: -30px;
 		}
 		.header__li2 {
 			display: inline-block;
 			position: relative;
-			left: 60px;
+			left: 30px;
 		}
 
 		.header__link-1 {
 			display: inline-block;
 			width: auto;
-			padding: 18px 19px;
+			padding: 12px 14px;
 		}
 
 		.header__link-2 {
-			padding: 18px 12px;
+			padding: 12px 10px;
 			display: inline-block;
 			width: auto;
 		}
@@ -351,16 +368,16 @@ body._lock {
 
 		.header__form {
 			position: relative;
-			top: 156px;
+			top: 15px;
 			display: block;
-			padding: 20px 0px 20px 20px;
+			padding: 10px 0px 10px 20px;
 			background-color: rgba(255, 255, 255, 0.7);
 			border-radius: 23px 20px;
 			margin: 0 auto;
 
 			.header__input {
-				width: 307px;
-				padding: 18px 20px;
+				width: 250px;
+				padding: 10px 20px;
 				border: 2px solid #bfe5ec;
 				border-radius: 15px;
 				color: #1d71b8;
@@ -378,19 +395,19 @@ body._lock {
 			.header__button {
 				position: relative;
 				right: 30px;
-				top: 2px;
+				top: 0;
 				font-family: "Lugatype";
 				font-style: normal;
 				font-weight: normal;
-				font-size: 24px;
-				line-height: 27px;
+				font-size: 20px;
+				line-height: 23px;
 				text-align: center;
 				color: #ffffff;
 				background: #1d71b8;
 				box-shadow: 0px 14px 21px rgba(29, 113, 184, 0.35);
 				border-radius: 15px;
-				width: 154px;
-				height: 70px;
+				width: 120px;
+				height: 60px;
 				transform: scale(1);
 				&:active {
 					transform: scale(0.8);
@@ -399,10 +416,10 @@ body._lock {
 		}
 
 		.header__images {
-			margin-top: 200px;
+			margin-top: 35px;
 			display: flex;
 			justify-content: center;
-			margin-bottom: 40px;
+			margin-bottom: 20px;
 		}
 
 		%linkfooter {
@@ -447,22 +464,23 @@ body._lock {
 		}
 		.header__activeation-image {
 			display: block;
+			margin-top: -10px;
 		}
 
 		.activation-link {
 			background-color: rgba(255, 255, 255, 0.7);
 			border-radius: 10px;
-			padding: 12px;
+			padding: 9px 10px;
 			display: block;
 		}
 
 		.menu-ikon {
 			left: 0;
-			margin-top: 49px;
+			margin-top: -20px;
 		}
 
 		.header__list {
-			margin-top: 30px;
+			margin-top: 20px;
 		}
 
 		.header__link {
@@ -483,15 +501,15 @@ body._lock {
 
 		.header__li2 {
 			position: relative;
-			top: 10px;
+			top: -2px;
 		}
 
 		.header__form {
 			position: relative;
-			top: 20px;
+			top: 0;
 			display: block;
 			padding: 15px 0px 15px 15px;
-			margin: 30px auto 0 auto;
+			margin: 0px auto 0 auto;
 
 			.header__input {
 				width: 200px;
@@ -513,10 +531,10 @@ body._lock {
 		}
 
 		.header__images {
-			margin-top: 50px;
+			margin-top: 20px;
 			display: flex;
 			justify-content: center;
-			margin-bottom: 40px;
+			margin-bottom: 20px;
 		}
 	}
 
@@ -714,12 +732,6 @@ body._lock {
 		opacity: 0.5;
 	}
 
-	&__container {
-	}
-
-	&__title {
-	}
-
 	&__content {
 		padding-top: 40px;
 		display: flex;
@@ -829,9 +841,6 @@ body._lock {
 		padding: 30px;
 		border-radius: 0 0 20px 20px;
 	}
-
-	&__text-about {
-	}
 }
 .text {
 	font-family: "Bryndan Write";
@@ -889,10 +898,6 @@ body._lock {
 	color: #1d71b8;
 }
 
-.number {
-	&__img {
-	}
-}
 .geo-img {
 	position: absolute;
 	top: 17px;
@@ -1151,21 +1156,13 @@ body._lock {
 *********************PRODUCT*******************/
 
 .product__images {
-	display: none;
+	position: relative;
+	z-index: -1;
 }
 
 .product {
 	margin-top: 120px;
 	position: relative;
-
-	&__images {
-	}
-
-	&__conteiner {
-	}
-
-	&__title {
-	}
 
 	&__title-cards {
 		font-family: "Bryndan Write";
@@ -1185,17 +1182,28 @@ body._lock {
 		margin-top: 54px;
 	}
 }
-.circle-5 {
-}
+
 .circle {
+	position: absolute;
+	z-index: -1;
+}
+.circle-5 {
+	right: -200px;
+	top: 200px;
+	width: 396px;
+	height: 402px;
 }
 .circle-6 {
+	top: 100px;
+	left: -70px;
+	width: 167px;
+	height: 167px;
 }
 .circle-7 {
-}
-.circle-8 {
-}
-.sub-title {
+	top: 350px;
+	left: -70px;
+	width: 110px;
+	height: 112px;
 }
 
 .cards__img img {
@@ -1276,6 +1284,25 @@ body._lock {
 	}
 }
 @media (max-width: 767.98px) {
+	.circle-5 {
+		right: -70px;
+		top: 0px;
+		width: 218px;
+		height: 221px;
+	}
+	.circle-6 {
+		top: 100px;
+		left: -70px;
+		width: 167px;
+		height: 167px;
+	}
+	.circle-7 {
+		top: 450px;
+		left: -50px;
+		width: 110px;
+		height: 112px;
+	}
+
 	.cards__img {
 		height: 200px;
 	}
@@ -1294,13 +1321,31 @@ body._lock {
 }
 
 @media (max-width: 600px) {
+	.circle-5 {
+		right: -50px;
+		top: 1150px;
+		width: 218px;
+		height: 221px;
+	}
+	.circle-6 {
+		top: 550px;
+		left: 300px;
+		width: 167px;
+		height: 167px;
+	}
+	.circle-7 {
+		top: 450px;
+		left: 0px;
+		width: 110px;
+		height: 112px;
+	}
 	.product__cards {
 		display: flex;
 		flex-direction: column;
 	}
 	.cards {
 		max-width: 338px;
-		margin: 40px auto 0 auto;
+		margin: 20px auto 0 auto;
 	}
 	.cards__img {
 		height: 350px;
