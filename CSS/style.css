@@ -220,12 +220,24 @@ body._lock {
 
 .header .header__menu {
   position: absolute;
-  right: -400px;
+  right: -450px;
 }
 
 @media (max-width: 1100.98px) {
   .header .header__menu {
-    position: static;
+    margin-right: 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header .header__menu {
+    margin-right: 130px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header .header__menu {
+    margin-right: 150px;
   }
 }
 
@@ -249,20 +261,6 @@ body._lock {
 
 .header__list li:hover .header__sub-list {
   display: block;
-}
-
-.header__list li:last-child {
-  margin-right: 0;
-  position: relative;
-  padding-right: 10px;
-}
-
-.header__list li:last-child .last-link::after {
-  position: absolute;
-  content: url(../img/sparow.svg);
-  left: 25px;
-  top: 0px;
-  cursor: pointer;
 }
 
 .header .header__li1 {
@@ -455,7 +453,7 @@ body._lock {
     z-index: 99;
   }
   .header .header__list {
-    margin-top: 20px;
+    margin-top: 120px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -476,9 +474,6 @@ body._lock {
   .header .header__list > li:hover {
     text-decoration: none;
   }
-  .header .header__list > li:last-child {
-    display: none;
-  }
   .header .header__link {
     display: block;
     font-size: 20px;
@@ -495,27 +490,6 @@ body._lock {
     background-color: #1d71b8;
     color: #fff;
   }
-  .header .header__li1 {
-    display: inline-block;
-    position: relative;
-    top: 69px;
-    left: -30px;
-  }
-  .header .header__li2 {
-    display: inline-block;
-    position: relative;
-    left: 30px;
-  }
-  .header .header__link-1 {
-    display: inline-block;
-    width: auto;
-    padding: 12px 14px;
-  }
-  .header .header__link-2 {
-    padding: 12px 10px;
-    display: inline-block;
-    width: auto;
-  }
   .header .header__link-5 {
     display: block;
   }
@@ -526,7 +500,7 @@ body._lock {
     padding: 10px 0px 10px 20px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 23px 20px;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
   }
   .header .header__form .header__input {
     width: 250px;
@@ -639,7 +613,7 @@ body._lock {
     margin-top: -20px;
   }
   .header .header__list {
-    margin-top: 20px;
+    margin-top: 120px;
   }
   .header .header__link {
     width: 338px;
@@ -663,7 +637,7 @@ body._lock {
     top: 0;
     display: block;
     padding: 15px 0px 15px 15px;
-    margin: 0px auto 0 auto;
+    margin: 30px auto 0 auto;
   }
   .header .header__form .header__input {
     width: 200px;
@@ -1445,6 +1419,8 @@ body._lock {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 33.333%;
           flex: 0 1 33.333%;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .cards__conteiner {
@@ -1527,6 +1503,32 @@ body._lock {
           box-shadow: 0px 14px 21px rgba(29, 113, 184, 0.35);
   border-radius: 10px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.buttommobile1 {
+  display: none;
+}
+
+.buttomdesctop-1 {
+  display: block;
+}
+
+.buttommobile2 {
+  display: none;
+}
+
+.buttomdesctop2 {
+  display: block;
+}
+
+.buttommobile3 {
+  display: none;
+}
+
+.buttomdesctop3 {
+  display: block;
 }
 
 @media (max-width: 900px) {
@@ -1620,6 +1622,24 @@ body._lock {
     font-size: 18px;
     line-height: 18px;
   }
+  .buttomdesctop-1 {
+    display: none;
+  }
+  .buttommobile1 {
+    display: block;
+  }
+  .buttommobile2 {
+    display: block;
+  }
+  .buttomdesctop2 {
+    display: none;
+  }
+  .buttommobile3 {
+    display: block;
+  }
+  .buttomdesctop3 {
+    display: none;
+  }
 }
 
 /************************************************************
@@ -1627,6 +1647,8 @@ body._lock {
 ************************************************************/
 .product__visible {
   display: none;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .product__cards-sub {
@@ -1867,32 +1889,8 @@ input::-webkit-calendar-picker-indicator {
   background: transparent;
   color: #1d6fb5;
   border: 2px solid #1d6fb5;
-  -webkit-animation-name: color;
-          animation-name: color;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-}
-
-@-webkit-keyframes color {
-  0% {
-    background: #1d6fb5;
-    color: #fff;
-  }
-  100% {
-    background: transparent;
-    color: #1d6fb5;
-  }
-}
-
-@keyframes color {
-  0% {
-    background: #1d6fb5;
-    color: #fff;
-  }
-  100% {
-    background: transparent;
-    color: #1d6fb5;
-  }
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 @media (min-width: 600px) {
@@ -1905,42 +1903,20 @@ input::-webkit-calendar-picker-indicator {
             animation-name: position;
     -webkit-animation-duration: 0.8s;
             animation-duration: 0.8s;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
   }
   ._activ-width {
     -webkit-transform: scale(1.3, 1.1);
             transform: scale(1.3, 1.1);
-    -webkit-animation-name: scale;
-            animation-name: scale;
-    -webkit-animation-duration: 0.5s;
-            animation-duration: 0.5s;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
   }
   ._activ-width .cards__img {
     background: rgba(255, 255, 255, 0.8);
   }
   ._activ-width .cards__content {
     background: rgba(255, 255, 255, 0.8);
-  }
-}
-
-@-webkit-keyframes scale {
-  0% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  100% {
-    -webkit-transform: scale(1.3, 1.1);
-            transform: scale(1.3, 1.1);
-  }
-}
-
-@keyframes scale {
-  0% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  100% {
-    -webkit-transform: scale(1.3, 1.1);
-            transform: scale(1.3, 1.1);
   }
 }
 

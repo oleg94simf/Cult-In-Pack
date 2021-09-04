@@ -80,12 +80,24 @@ body._lock {
 
 	.header__menu {
 		position: absolute;
-		right: -400px;
+		right: -450px;
 	}
 
 	@media (max-width: 1100.98px) {
 		.header__menu {
-			position: static;
+			margin-right: 80px;
+		}
+	}
+
+	@media (max-width: 900px) {
+		.header__menu {
+			margin-right: 130px;
+		}
+	}
+
+	@media (max-width: 800px) {
+		.header__menu {
+			margin-right: 150px;
 		}
 	}
 
@@ -101,18 +113,6 @@ body._lock {
 
 			&:hover .header__sub-list {
 				display: block;
-			}
-			&:last-child {
-				margin-right: 0;
-				position: relative;
-				padding-right: 10px;
-				.last-link::after {
-					position: absolute;
-					content: url(../img/sparow.svg);
-					left: 25px;
-					top: 0px;
-					cursor: pointer;
-				}
 			}
 		}
 	}
@@ -303,7 +303,7 @@ body._lock {
 		}
 
 		.header__list {
-			margin-top: 20px;
+			margin-top: 120px;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -315,10 +315,6 @@ body._lock {
 			&:hover {
 				text-decoration: none;
 			}
-		}
-
-		.header__list > li:last-child {
-			display: none;
 		}
 
 		.header__link {
@@ -338,30 +334,6 @@ body._lock {
 			}
 		}
 
-		.header__li1 {
-			display: inline-block;
-			position: relative;
-			top: 69px;
-			left: -30px;
-		}
-		.header__li2 {
-			display: inline-block;
-			position: relative;
-			left: 30px;
-		}
-
-		.header__link-1 {
-			display: inline-block;
-			width: auto;
-			padding: 12px 14px;
-		}
-
-		.header__link-2 {
-			padding: 12px 10px;
-			display: inline-block;
-			width: auto;
-		}
-
 		.header__link-5 {
 			display: block;
 		}
@@ -373,7 +345,7 @@ body._lock {
 			padding: 10px 0px 10px 20px;
 			background-color: rgba(255, 255, 255, 0.7);
 			border-radius: 23px 20px;
-			margin: 0 auto;
+			margin: 30px auto 0 auto;
 
 			.header__input {
 				width: 250px;
@@ -480,7 +452,7 @@ body._lock {
 		}
 
 		.header__list {
-			margin-top: 20px;
+			margin-top: 120px;
 		}
 
 		.header__link {
@@ -509,7 +481,7 @@ body._lock {
 			top: 0;
 			display: block;
 			padding: 15px 0px 15px 15px;
-			margin: 0px auto 0 auto;
+			margin: 30px auto 0 auto;
 
 			.header__input {
 				width: 200px;
@@ -1216,6 +1188,7 @@ body._lock {
 	margin: 0 10px 0 10px;
 	display: flex;
 	flex: 0 1 33.333%;
+	transition: all 0.3s ease-in;
 	&__conteiner {
 		border: 2px solid #fff;
 		margin: 0 15px;
@@ -1275,9 +1248,32 @@ body._lock {
 		box-shadow: 0px 14px 21px rgba(29, 113, 184, 0.35);
 		border-radius: 10px;
 		cursor: pointer;
+		transition: all 0.3s ease-in;
 	}
 }
+.buttommobile1 {
+	display: none;
+}
 
+.buttomdesctop-1 {
+	display: block;
+}
+
+.buttommobile2 {
+	display: none;
+}
+
+.buttomdesctop2 {
+	display: block;
+}
+
+.buttommobile3 {
+	display: none;
+}
+
+.buttomdesctop3 {
+	display: block;
+}
 @media (max-width: 900px) {
 	.cards__img {
 		height: 300px;
@@ -1355,6 +1351,30 @@ body._lock {
 		font-size: 18px;
 		line-height: 18px;
 	}
+
+	.buttomdesctop-1 {
+		display: none;
+	}
+
+	.buttommobile1 {
+		display: block;
+	}
+
+	.buttommobile2 {
+		display: block;
+	}
+
+	.buttomdesctop2 {
+		display: none;
+	}
+
+	.buttommobile3 {
+		display: block;
+	}
+
+	.buttomdesctop3 {
+		display: none;
+	}
 }
 
 /************************************************************
@@ -1362,6 +1382,7 @@ body._lock {
 ************************************************************/
 .product__visible {
 	display: none;
+	transition: all 0.3s ease-in;
 }
 
 .product {
@@ -1555,25 +1576,13 @@ input::-webkit-calendar-picker-indicator {
 		border-radius: 20px 20px 0 0;
 	}
 }
-//выпадающие блоки
+//выпадающие блоки**************************************************************************
 
 ._active-buttom {
 	background: transparent;
 	color: #1d6fb5;
 	border: 2px solid #1d6fb5;
-	animation-name: color;
-	animation-duration: 0.3s;
-}
-
-@keyframes color {
-	0% {
-		background: #1d6fb5;
-		color: #fff;
-	}
-	100% {
-		background: transparent;
-		color: #1d6fb5;
-	}
+	transition: all 0.3s ease-in;
 }
 
 @media (min-width: 600px) {
@@ -1584,27 +1593,19 @@ input::-webkit-calendar-picker-indicator {
 		opacity: 1;
 		animation-name: position;
 		animation-duration: 0.8s;
+		transition: all 0.3s ease-in;
 	}
 
 	._activ-width {
 		transform: scale(1.3, 1.1);
-		animation-name: scale;
-		animation-duration: 0.5s;
+
+		transition: all 0.3s ease-in;
 		.cards__img {
 			background: rgba(255, 255, 255, 0.8);
 		}
 		.cards__content {
 			background: rgba(255, 255, 255, 0.8);
 		}
-	}
-}
-
-@keyframes scale {
-	0% {
-		transform: scale(1, 1);
-	}
-	100% {
-		transform: scale(1.3, 1.1);
 	}
 }
 
