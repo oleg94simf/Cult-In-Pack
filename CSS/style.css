@@ -1764,6 +1764,57 @@ input::-webkit-calendar-picker-indicator {
   margin: 45px auto 0 auto;
 }
 
+.cards-sub__message {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.cards-sub__message .message__text {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 20px;
+}
+
+.cards-sub__message .cards-sub__link {
+  margin-top: 6px;
+}
+
+.cards-sub__message .cards-sub__telegram {
+  border-bottom: 2px solid;
+  margin-right: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+}
+
+.cards-sub__message .cards-sub__telegram::before {
+  content: "  ";
+  background: url(../img/telegram.svg);
+  width: 20px;
+  height: 17px;
+  position: absolute;
+  left: -30px;
+  top: 0;
+}
+
+.cards-sub__message .cards-sub__viber {
+  border-bottom: 2px solid;
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+}
+
+.cards-sub__message .cards-sub__viber::before {
+  content: "  ";
+  background: url(../img/viber.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -30px;
+  top: 0;
+}
+
 @media (max-width: 1200px) {
   .product__visible {
     margin: 0 45px 0 45px;
@@ -1816,21 +1867,80 @@ input::-webkit-calendar-picker-indicator {
   background: transparent;
   color: #1d6fb5;
   border: 2px solid #1d6fb5;
+  -webkit-animation-name: color;
+          animation-name: color;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+@-webkit-keyframes color {
+  0% {
+    background: #1d6fb5;
+    color: #fff;
+  }
+  100% {
+    background: transparent;
+    color: #1d6fb5;
+  }
+}
+
+@keyframes color {
+  0% {
+    background: #1d6fb5;
+    color: #fff;
+  }
+  100% {
+    background: transparent;
+    color: #1d6fb5;
+  }
 }
 
 @media (min-width: 600px) {
   ._activ-subCards {
     display: block;
+    position: relative;
+    top: 0;
+    opacity: 1;
+    -webkit-animation-name: position;
+            animation-name: position;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
   }
   ._activ-width {
     -webkit-transform: scale(1.3, 1.1);
             transform: scale(1.3, 1.1);
+    -webkit-animation-name: scale;
+            animation-name: scale;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
   }
   ._activ-width .cards__img {
     background: rgba(255, 255, 255, 0.8);
   }
   ._activ-width .cards__content {
     background: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1.3, 1.1);
+            transform: scale(1.3, 1.1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1.3, 1.1);
+            transform: scale(1.3, 1.1);
   }
 }
 
@@ -1847,6 +1957,13 @@ input::-webkit-calendar-picker-indicator {
   }
   ._activ-width ._active-mobile {
     display: block;
+    position: relative;
+    top: 0;
+    opacity: 1;
+    -webkit-animation-name: position;
+            animation-name: position;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
   }
   .cards {
     display: -webkit-box;
@@ -1856,6 +1973,28 @@ input::-webkit-calendar-picker-indicator {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@-webkit-keyframes position {
+  0% {
+    top: -80px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes position {
+  0% {
+    top: -80px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
   }
 }
 

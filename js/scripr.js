@@ -43,6 +43,11 @@ if (menuLinks.length > 0) {
 	}
 }
 
+
+
+
+
+
 //language
 
 let list = document.querySelector(".header__list");
@@ -58,16 +63,7 @@ for (let i = 0; i < lang.length; i++) {
 
 
 
-let but = document.querySelector('.panel-but');
 
-let plan = document.querySelector('.panel');
-
-if (but) {
-	but.addEventListener('click', function () {
-		but.classList.toggle('active-bot');
-		plan.classList.toggle('active');
-	})
-}
 
 /*выпадающие блоки*/
 
@@ -87,27 +83,32 @@ const mobilecard1 = document.querySelector('.buttom-mobile1');
 const mobilecard2 = document.querySelector('.buttom-mobile2');
 const mobilecard3 = document.querySelector('.buttom-mobile3');
 
+
+
+
+
 if (buttom1) {
 
 } buttom1.addEventListener('click', function () {
-	buttom1.classList.toggle('_active-buttom')
-	buttomSub1.classList.toggle('_activ-subCards')
+	buttom1.classList.toggle('_active-buttom');
+	buttomSub1.classList.toggle('_activ-subCards');
 	cards1.classList.toggle('_activ-width');
+
 })
 
 if (buttom2) {
 
 } buttom2.addEventListener('click', function () {
-	buttom2.classList.toggle('_active-buttom')
-	buttomSub2.classList.toggle('_activ-subCards')
+	buttom2.classList.toggle('_active-buttom');
+	buttomSub2.classList.toggle('_activ-subCards');
 	cards2.classList.toggle('_activ-width');
 })
 
 if (buttom3) {
 
 } buttom3.addEventListener('click', function () {
-	buttom3.classList.toggle('_active-buttom')
-	buttomSub3.classList.toggle('_activ-subCards')
+	buttom3.classList.toggle('_active-buttom');
+	buttomSub3.classList.toggle('_activ-subCards');
 	cards3.classList.toggle('_activ-width');
 })
 
@@ -129,4 +130,84 @@ if (buttom3) {
 } buttom3.addEventListener('click', function () {
 	mobilecard3.classList.toggle('_active-mobile');
 })
+
+
+
+buttom1.onclick = (event) => {
+
+	if (event.target.classList.contains('_active-buttom')) {
+		buttom2.classList.remove('_active-buttom');
+		buttomSub2.classList.remove('_activ-subCards');
+		cards2.classList.remove('_activ-width');
+		mobilecard2.classList.remove('_active-mobile');
+
+		buttom3.classList.remove('_active-buttom');
+		buttomSub3.classList.remove('_activ-subCards');
+		cards3.classList.remove('_activ-width');
+		mobilecard3.classList.remove('_active-mobile');
+	}
+}
+
+buttom2.onclick = (event) => {
+
+	if (event.target.classList.contains('_active-buttom')) {
+		buttom1.classList.remove('_active-buttom');
+		buttomSub1.classList.remove('_activ-subCards');
+		cards1.classList.remove('_activ-width');
+		mobilecard1.classList.remove('_active-mobile');
+
+		buttom3.classList.remove('_active-buttom');
+		buttomSub3.classList.remove('_activ-subCards');
+		cards3.classList.remove('_activ-width');
+		mobilecard3.classList.remove('_active-mobile');
+	}
+}
+
+buttom3.onclick = (event) => {
+
+	if (event.target.classList.contains('_active-buttom')) {
+		buttom2.classList.remove('_active-buttom');
+		buttomSub2.classList.remove('_activ-subCards');
+		cards2.classList.remove('_activ-width');
+		mobilecard2.classList.remove('_active-mobile');
+
+		buttom1.classList.remove('_active-buttom');
+		buttomSub1.classList.remove('_activ-subCards');
+		cards1.classList.remove('_activ-width');
+		mobilecard1.classList.remove('_active-mobile');
+	}
+}
+
+
+
+/* $(function () {
+
+	jQuery.fn.autoscroll = function (selector) {
+		$('html, body').animate({
+			scrollTop: $(this).offset().top
+		}, 500);
+	}
+
+	$('.buttom-1').on('click', function () {
+		$('.buttom-sub1').autoscroll();
+	});
+})
+
+ */
+
+
+/* $(function () {
+
+	jQuery.fn.autoscroll = function (selector) {
+		$('html, body').animate({
+			scrollTop: $(".main").height() + 2
+		}, 500);
+	}
+
+	$('.buttom-1').on('click', function () {
+		$('.buttom-mobile1').autoscroll();
+	});
+})
+
+ */
 
