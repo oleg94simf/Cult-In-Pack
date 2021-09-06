@@ -1994,7 +1994,7 @@ div.selectBox::after {
   height: 8px;
   display: block;
   position: absolute;
-  right: 60px;
+  right: 90px;
   top: 52px;
   color: #1d71b8;
   z-index: 2;
@@ -2008,6 +2008,7 @@ span.selected {
   line-height: 27px;
   text-indent: 20px;
   border: 2px solid #bfe5ec;
+  width: 566px;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.6);
   overflow: hidden;
@@ -2020,25 +2021,114 @@ span.selected {
 }
 
 div.selectOptions {
+  width: 587px;
   position: absolute;
   top: 85px;
   left: 30px;
-  width: 238px;
-  border-radius: 5px;
+  border: 2px solid #bfe5ec;
+  border-radius: 15px;
   overflow: hidden;
-  background: #1b1b1b;
-  color: #fff;
+  background: white;
+  font-family: "Lugatype";
+  font-style: normal;
+  font-weight: normal;
+  color: #1d71b8;
   padding-top: 2px;
   display: none;
+  font-size: 24px;
+  line-height: 27px;
 }
 
 span.selectOption {
   display: block;
-  width: 80%;
-  padding: 5px 10%;
+  padding: 7px 32px;
 }
 
 span.selectOption:hover {
   color: #f6f6f6;
   background: #4096ee;
+}
+
+@media (max-width: 1150px) {
+  div.selectBox {
+    margin: 0 auto;
+  }
+  div.selectBox::after {
+    position: absolute;
+    right: 80px;
+    top: 52px;
+  }
+  span.selected {
+    line-height: 27px;
+    text-indent: 20px;
+    width: 424px;
+  }
+  div.selectOptions {
+    width: 445px;
+    font-size: 24px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 991px) {
+  div.selectBox {
+    margin: 0 auto;
+  }
+  div.selectBox::after {
+    position: absolute;
+    right: 70px;
+    top: 52px;
+  }
+  span.selected {
+    line-height: 27px;
+    text-indent: 20px;
+    width: 324px;
+  }
+  div.selectOptions {
+    width: 345px;
+    font-size: 24px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 850px) {
+  div.selectBox::after {
+    position: absolute;
+    right: 70px;
+    top: 52px;
+  }
+  span.selected {
+    font-size: 20px;
+    line-height: 23px;
+    width: 224px;
+    padding: 13px;
+  }
+  div.selectOptions {
+    width: 250px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  div.selectBox::after {
+    position: absolute;
+    right: 70px;
+    top: 52px;
+  }
+  span.selected {
+    width: 348px;
+  }
+  div.selectOptions {
+    width: 374px;
+  }
+}
+
+@media (max-width: 600px) {
+  span.selected {
+    width: 198px;
+  }
+  div.selectOptions {
+    width: 224px;
+  }
 }
