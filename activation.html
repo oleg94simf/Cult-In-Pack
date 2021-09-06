@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
 
 <head>
 	<meta charset="UTF-8">
@@ -11,7 +11,7 @@
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script>
 		$(function ($) {
-			$(".phone").mask("+38(999)-(999)-(9999)");
+			$(".phone").mask("+38(099) - 999 - 9999");
 		});
 	</script>
 
@@ -41,7 +41,7 @@
 									<li><a data-goto=".about" href="index.html#about" class="header__link header__link-3">про
 											нас</a>
 									</li>
-									<li><a data-goto=".product" href="index.html#product"
+									<li><a data-goto=".product" href="index.html#productblock"
 											class="header__link header__link-4">продукти</a>
 									</li>
 									<li><a href="activation.html" class="header__link header__link-5">активация</a></li>
@@ -97,10 +97,14 @@
 							</h3>
 						</div>
 						<form action="" method="post" class="content__form">
-							<input type="number" class="form__input" placeholder="Номер картки" required>
-							<input type="email" class="form__input" placeholder="Адреса" required>
-							<input type="name" class="form__input" placeholder="Ім’я" required>
-							<input type="tel" class="form__input phone" placeholder="+38(___)-(___)-(____)" required>
+							<input type="number" class="form__input" placeholder="Номер картки" required
+								oninvalid="setCustomValidity(' ')">
+							<input type="email" class="form__input" placeholder="Адреса" required
+								oninvalid="setCustomValidity(' ')">
+							<input type="name" class="form__input" placeholder="Ім’я" required
+								oninvalid="setCustomValidity(' ')">
+							<input type="tel" class="form__input phone" placeholder="+38(0__) - ___ - ____" required
+								oninvalid="setCustomValidity(' ')">
 							<button class="form__button">Активація</button>
 						</form>
 					</div>

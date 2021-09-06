@@ -12,6 +12,7 @@ if (iconMenu) {
 }
 
 
+
 //прокрутка при клике
 
 const menuLinks = document.querySelectorAll('.header__link[data-goto]')
@@ -219,7 +220,7 @@ buttom3.onclick = (event) => {
 		cards2.classList.remove('_activ-width');
 		mobilecard2.classList.remove('_active-mobile');
 
-		bottomMobile1.classList.remove('_active-buttom');
+		buttom1.classList.remove('_active-buttom');
 		buttomSub1.classList.remove('_activ-subCards');
 		cards1.classList.remove('_activ-width');
 		mobilecard1.classList.remove('_active-mobile');
@@ -255,7 +256,7 @@ $(function () {
 
 	jQuery.fn.autoscroll = function (selector) {
 		$('html, body').animate({
-			scrollTop: $(".main").height() + 50
+			scrollTop: $(".main").height() + 150
 		}, 500);
 	}
 
@@ -269,7 +270,7 @@ $(function () {
 
 	jQuery.fn.autoscroll = function (selector) {
 		$('html, body').animate({
-			scrollTop: $(".main").height() + 50
+			scrollTop: $(".main").height() + 150
 		}, 500);
 	}
 
@@ -284,7 +285,7 @@ $(function () {
 
 	jQuery.fn.autoscroll = function (selector) {
 		$('html, body').animate({
-			scrollTop: $(".main").height() + 50
+			scrollTop: $(".main").height() + 150
 		}, 500);
 	}
 
@@ -341,7 +342,7 @@ $(function () {
  */
 
 $(document).ready(function () {
-	$(".mobile").on("click", function (event) {
+	$(".scroll").on("click", function (event) {
 		let hash = $(this).attr("data-target"),
 			target = $("#" + hash);
 
@@ -354,3 +355,33 @@ $(document).ready(function () {
 	});
 
 });
+
+
+/*form Ssity********************************************************
+********************************************************************/
+
+
+$(document).ready(function () {
+	enableSelectBoxes();
+});
+function enableSelectBoxes() {
+	$('div.selectBox').each(function () {
+		$(this).children('span.selected').html($(this).children('div.selectOptions').children('span.selectOption:first').html());
+		$(this).attr('value', $(this).children('div.selectOptions').children('span.selectOption:first').attr('value'));
+
+		$(this).children('span.selected,span.selectArrow').click(function () {
+			if ($(this).parent().children('div.selectOptions').css('display') == 'none') {
+				$(this).parent().children('div.selectOptions').css('display', 'block');
+			}
+			else {
+				$(this).parent().children('div.selectOptions').css('display', 'none');
+			}
+		});
+
+		$(this).find('span.selectOption').click(function () {
+			$(this).parent().css('display', 'none');
+			$(this).closest('div.selectBox').attr('value', $(this).attr('value'));
+			$(this).parent().siblings('span.selected').html($(this).html());
+		});
+	});
+}

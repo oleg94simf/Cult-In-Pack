@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
 
 <head>
 	<meta charset="UTF-8">
@@ -56,9 +56,10 @@
 
 					</div>
 				</div>
-				<div class="header__activation"><a href="activation.html" class="header__activation-link">активація</a>
-					<div class="header__activeation-image"><a href="activation.html" class="activation-link"><img
-								src="img/activation.svg" alt="activation"></a>
+				<div class="header__activation"><a href="#" class="header__activation-link scroll"
+						data-target="product">активація</a>
+					<div class="header__activeation-image"><a href="activation.html" class="activation-link "><img
+								src="img/activation.svg" alt="activation" data-target="product-title" class="scroll"></a>
 					</div>
 				</div>
 			</section>
@@ -178,9 +179,9 @@
 				<!--section PRODUCT-->
 
 
-				<a id="product"></a>
-
-				<section class="product">
+				<a id="productblock"></a>
+				<a id="product-title"></a>
+				<section class="product" id="product">
 					<div class="product__images">
 						<img src="img/circle 1.png" alt="circle" class="circle-5 circle">
 						<img src="img/circle2.png" alt="circle" class="circle-6 circle">
@@ -203,7 +204,7 @@
 										<button class="cards__button buttomdesctop-1 ">
 											Маю таку
 											картку</button>
-										<button class="cards__button buttommobile1 mobile" data-target="section-1">
+										<button class="cards__button buttommobile1 scroll" data-target="section-1">
 											Маю таку
 											картку</button>
 									</div>
@@ -218,17 +219,15 @@
 										</div>
 										<div class="cards-sub__content">
 											<h3 class="cards-sub__title cards__tittle">пакет “клубний”</h3>
+											<div class='selectBox'>
+												<span class='selected'></span>
 
-
-											<div class="cards-sub__city">
-												<input list="city" class="sity-input" placeholder="Ваше місто">
-												<datalist id="city">
-													<option value="Сімферополь"></option>
-													<option value="Дніпро"></option>
-													<option value="Львів"></option>
-													<option value="Київ"></option>
-												</datalist>
-												<p class="before"></p>
+												<div class="selectOptions">
+													<span class="selectOption" value="Option 1">Київ</span>
+													<span class="selectOption" value="Option 2">Сімферополь</span>
+													<span class="selectOption" value="Option 3">Львів</span>
+													<span class="selectOption" value="Option 4">Дніпро</span>
+												</div>
 											</div>
 
 											<p class="cards-sub__text text">Сьогодення нам показує, що зараз месенджери
@@ -246,7 +245,7 @@
 
 												Достатньо одного додатку - месенджера <span class="love">&#10084;</span> </p>
 
-											<button class="cards-sub__button">Активувати картку</button>
+											<a href="activation.html" class="cards-sub__button">Активувати картку</a>
 											<div class="cards-sub__message">
 												<p class="message__text text">Також ви можете активувати картку в наших чат-ботах
 												</p>
@@ -273,7 +272,7 @@
 											НА
 											ЕКСКУРСІЮ</p>
 										<button class="cards__button buttomdesctop2">Маю таку картку</button>
-										<button class="cards__button buttommobile2 mobile" data-target="section-2">
+										<button class="cards__button buttommobile2 scroll" data-target="section-2">
 											Маю таку
 											картку</button>
 									</div>
@@ -288,15 +287,15 @@
 										</div>
 										<div class="cards-sub__content">
 											<h3 class="cards-sub__title cards__tittle">пакет “Класичний”</h3>
-											<div class="cards-sub__city">
-												<input list="city" class="sity-input" placeholder="Ваше місто">
-												<datalist id="city">
-													<option value="Сімферополь"></option>
-													<option value="Дніпро"></option>
-													<option value="Львів"></option>
-													<option value="Київ"></option>
-												</datalist>
-												<p class="before"></p>
+											<div class='selectBox'>
+												<span class='selected'></span>
+
+												<div class="selectOptions">
+													<span class="selectOption" value="Option 1">Київ</span>
+													<span class="selectOption" value="Option 2">Сімферополь</span>
+													<span class="selectOption" value="Option 3">Львів</span>
+													<span class="selectOption" value="Option 4">Дніпро</span>
+												</div>
 											</div>
 
 											<p class="cards-sub__text text">Сьогодення нам показує, що зараз месенджери
@@ -313,7 +312,7 @@
 
 												Достатньо одного додатку - месенджера <span class="love">&#10084;</span> </p>
 
-											<button class="cards-sub__button">Активувати картку</button>
+											<a href="activation.html" class="cards-sub__button">Активувати картку</a>
 											<div class="cards-sub__message">
 												<p class="message__text text">Також ви можете активувати картку в наших чат-ботах
 												</p>
@@ -342,7 +341,7 @@
 											майстер
 											клас</p>
 										<button class="cards__button buttomdesctop3">Маю таку картку</button>
-										<button class="cards__button buttommobile3 mobile" data-target="section-3">
+										<button class="cards__button buttommobile3 scroll" data-target="section-3">
 											Маю таку
 											картку</button>
 									</div>
@@ -360,15 +359,15 @@
 										</div>
 										<div class="cards-sub__content">
 											<h3 class="cards-sub__title cards__tittle">пакет “ДИТЯЧИЙ”</h3>
-											<div class="cards-sub__city">
-												<input list="city" class="sity-input" placeholder="Ваше місто">
-												<datalist id="city">
-													<option value="Сімферополь"></option>
-													<option value="Дніпро"></option>
-													<option value="Львів"></option>
-													<option value="Київ"></option>
-												</datalist>
-												<p class="before"></p>
+											<div class='selectBox'>
+												<span class='selected'></span>
+
+												<div class="selectOptions">
+													<span class="selectOption" value="Option 1">Київ</span>
+													<span class="selectOption" value="Option 2">Сімферополь</span>
+													<span class="selectOption" value="Option 3">Львів</span>
+													<span class="selectOption" value="Option 4">Дніпро</span>
+												</div>
 											</div>
 
 											<p class="cards-sub__text text">Сьогодення нам показує, що зараз месенджери
@@ -387,7 +386,7 @@
 
 												Достатньо одного додатку - месенджера <span class="love">&#10084;</span> </p>
 
-											<button class="cards-sub__button">Активувати картку</button>
+											<a href="activation.html" class="cards-sub__button">Активувати картку</a>
 											<div class="cards-sub__message">
 												<p class="message__text text">Також ви можете активувати картку в наших
 													чат-ботах
@@ -421,15 +420,16 @@
 								</div>
 								<div class="cards-sub__content">
 									<h3 class="cards-sub__title cards__tittle">пакет “клубный”</h3>
-									<div class="cards-sub__city">
-										<input list="city" class="sity-input" placeholder="Ваше місто">
-										<datalist id="city">
-											<option value="Сімферополь"></option>
-											<option value="Дніпро"></option>
-											<option value="Львів"></option>
-											<option value="Київ"></option>
-										</datalist>
-										<p class="before"></p>
+
+									<div class='selectBox'>
+										<span class='selected'></span>
+
+										<div class="selectOptions">
+											<span class="selectOption" value="Option 1">Київ</span>
+											<span class="selectOption" value="Option 2">Сімферополь</span>
+											<span class="selectOption" value="Option 3">Львів</span>
+											<span class="selectOption" value="Option 4">Дніпро</span>
+										</div>
 									</div>
 
 									<p class="cards-sub__text text">Сьогодення нам показує, що зараз месенджери витіснили
@@ -444,7 +444,7 @@
 
 										Достатньо одного додатку - месенджера <span class="love">&#10084;</span> </p>
 
-									<button class="cards-sub__button">Активувати картку</button>
+									<a href="activation.html" class="cards-sub__button">Активувати картку</a>
 
 									<div class="cards-sub__message">
 										<p class="message__text text">Також ви можете активувати картку в наших чат-ботах</p>
@@ -467,17 +467,17 @@
 								</div>
 								<div class="cards-sub__content">
 									<h3 class="cards-sub__title cards__tittle">пакет “КЛАСИЧНИЙ”</h3>
-									<div class="cards-sub__city">
-										<input list="city" class="sity-input" placeholder="Ваше місто">
-										<datalist id="city">
-											<option value="Сімферополь"></option>
-											<option value="Дніпро"></option>
-											<option value="Львів"></option>
-											<option value="Київ"></option>
-										</datalist>
-										<p class="before"></p>
-									</div>
 
+									<div class='selectBox'>
+										<span class='selected'></span>
+
+										<div class="selectOptions">
+											<span class="selectOption" value="Option 1">Київ</span>
+											<span class="selectOption" value="Option 2">Сімферополь</span>
+											<span class="selectOption" value="Option 3">Львів</span>
+											<span class="selectOption" value="Option 4">Дніпро</span>
+										</div>
+									</div>
 									<p class="cards-sub__text text">Сьогодення нам показує, що зараз месенджери витіснили
 										соціальні
 										мережі. І це не просто так! Людям зручніше сприймати інформацію у компактному та
@@ -490,8 +490,10 @@
 
 										Достатньо одного додатку - месенджера <span class="love">&#10084;</span> </p>
 
-									<button class="cards-sub__button">Активувати картку</button>
+									<a href="activation.html" class="cards-sub__button">Активувати картку</a>
+
 									<div class="cards-sub__message">
+
 										<p class="message__text text">Також ви можете активувати картку в наших чат-ботах</p>
 										<div class="cards-sub__link">
 											<a href="https://web.telegram.org/k/" class="cards-sub__telegram text"> Telegram
@@ -513,15 +515,15 @@
 								</div>
 								<div class="cards-sub__content">
 									<h3 class="cards-sub__title cards__tittle">пакет “ДИТЯЧИЙ”</h3>
-									<div class="cards-sub__city">
-										<input list="city" class="sity-input" placeholder="Ваше місто">
-										<datalist id="city">
-											<option value="Сімферополь"></option>
-											<option value="Дніпро"></option>
-											<option value="Львів"></option>
-											<option value="Київ"></option>
-										</datalist>
-										<p class="before"></p>
+									<div class='selectBox'>
+										<span class='selected'></span>
+
+										<div class="selectOptions">
+											<span class="selectOption" value="Option 1">Київ</span>
+											<span class="selectOption" value="Option 2">Сімферополь</span>
+											<span class="selectOption" value="Option 3">Львів</span>
+											<span class="selectOption" value="Option 4">Дніпро</span>
+										</div>
 									</div>
 
 									<p class="cards-sub__text text">Сьогодення нам показує, що зараз месенджери витіснили
@@ -536,7 +538,7 @@
 
 										Достатньо одного додатку - месенджера <span class="love">&#10084;</span> </p>
 
-									<button class="cards-sub__button">Активувати картку</button>
+									<a href="activation.html" class="cards-sub__button">Активувати картку</a>
 									<div class="cards-sub__message">
 										<p class="message__text text">Також ви можете активувати картку в наших чат-ботах</p>
 										<div class="cards-sub__link">

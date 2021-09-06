@@ -1249,6 +1249,7 @@ body._lock {
 		border-radius: 10px;
 		cursor: pointer;
 		transition: all 0.3s ease-in;
+		border: none;
 	}
 }
 .buttommobile1 {
@@ -1435,35 +1436,13 @@ input::-webkit-calendar-picker-indicator {
 		text-align: center;
 	}
 
-	&__city {
-		position: relative;
-		display: flex;
-		.sity-input {
-			width: 100%;
-			margin: 30px 60px;
-			border: 2px solid #bfe5ec;
-			border-radius: 15px;
-			color: #1d71b8;
-			font-family: "Lugatype";
-			font-style: normal;
-			font-weight: normal;
-			font-size: 24px;
-			line-height: 27px;
-			outline: none;
-			padding: 12px 20px;
-			&::placeholder {
-				color: #1d6fb5;
-				font-size: 24px;
-				line-height: 27px;
-			}
-		}
-	}
-
 	&__text {
 		padding: 0 60px 0 60px;
 	}
 
 	&__button {
+		text-align: center;
+		display: inline-block;
 		font-family: "Lugatype";
 		font-style: normal;
 		font-weight: normal;
@@ -1478,6 +1457,10 @@ input::-webkit-calendar-picker-indicator {
 		border-radius: 10px;
 		cursor: pointer;
 		margin: 45px auto 0 auto;
+		&:active {
+			background-color: #fff;
+			color: #1d6fb5;
+		}
 	}
 }
 
@@ -1672,4 +1655,72 @@ input::-webkit-calendar-picker-indicator {
 .size {
 	height: 110px;
 	position: absolute;
+}
+
+//form sity*********************************************************************
+
+div.selectBox {
+	position: relative;
+	cursor: default;
+	text-align: left;
+	line-height: 30px;
+	clear: both;
+
+	display: flex;
+	flex-direction: column;
+	&::after {
+		content: " ";
+		background: url(../img/sub-sparow.svg);
+		background-repeat: no-repeat;
+		width: 15px;
+		height: 8px;
+		display: block;
+		position: absolute;
+		right: 60px;
+		top: 52px;
+		color: #1d71b8;
+		z-index: 2;
+	}
+}
+
+span.selected {
+	font-family: "Lugatype";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 27px;
+	text-indent: 20px;
+	border: 2px solid #bfe5ec;
+
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.6);
+	overflow: hidden;
+	padding: 9px;
+	color: #1d71b8;
+	margin: 30px;
+	display: flex;
+}
+
+div.selectOptions {
+	position: absolute;
+	top: 85px;
+	left: 30px;
+	width: 238px;
+	border-radius: 5px;
+	overflow: hidden;
+	background: rgb(27, 27, 27);
+	color: #fff;
+	padding-top: 2px;
+	display: none;
+}
+
+span.selectOption {
+	display: block;
+	width: 80%;
+	padding: 5px 10%;
+}
+
+span.selectOption:hover {
+	color: #f6f6f6;
+	background: #4096ee;
 }
