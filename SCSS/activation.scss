@@ -1,8 +1,3 @@
-input:focus:required:invalid {
-	border-color: red;
-	box-shadow: none;
-}
-
 .main {
 	margin-top: 140px;
 	&__content {
@@ -263,7 +258,7 @@ input[type="number"]::-ms-inner-spin-button {
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.8);
 	z-index: 200;
 	transition: all 0.3s ease-in;
 	transform: scale(0);
@@ -277,9 +272,9 @@ input[type="number"]::-ms-inner-spin-button {
 		align-items: center;
 	}
 	&__container {
+		position: relative;
 		border-radius: 20px;
 		width: 900px;
-		background-color: rgba(255, 255, 255, 0.6);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -295,7 +290,16 @@ input[type="number"]::-ms-inner-spin-button {
 			height: 300px;
 		}
 	}
-
+	.modal__fon {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(255, 255, 255, 0.7);
+		z-index: -1;
+		border-radius: 20px;
+	}
 	&__text-block {
 		text-align: center;
 		width: 100%;
@@ -383,4 +387,8 @@ input[type="number"]::-ms-inner-spin-button {
 .__active-modal {
 	transform: scale(1);
 	transition: all 0.4s ease-in;
+}
+
+.form__input._error {
+	border: 2px solid red;
 }

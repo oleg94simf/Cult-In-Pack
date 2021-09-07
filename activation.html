@@ -11,7 +11,7 @@
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script>
 		$(function ($) {
-			$(".phone").mask("+38(099) - 999 - 9999");
+			$(".phone").mask("+38 (099) - 999 - 99 - 99");
 		});
 	</script>
 
@@ -23,6 +23,7 @@
 		<header class="header">
 
 			<section class="header__container">
+
 				<div class="header__logo">
 					<a href="index.html"><img src="img/logo.svg" alt="logo"></a>
 				</div>
@@ -67,8 +68,9 @@
 
 					</div>
 				</div>
-				<div class="header__activation"><a href="activation.html" class="header__activation-link">активація</a>
-					<div class="header__activeation-image"><a href="activation.html" class="activation-link"><img
+				<div class="header__activation"><a href="index.html#productblock"
+						class="header__activation-link">активація</a>
+					<div class="header__activeation-image"><a href="index.html#productblock" class="activation-link"><img
 								src="img/activation.svg" alt="activation"></a>
 					</div>
 				</div>
@@ -96,14 +98,14 @@
 							<h3 class="forms__sub-title product__title-cards">Для активації картки необхіжно заповнити всі поля
 							</h3>
 						</div>
-						<form action="" method="post" class="content__form">
-							<input type="number" class="form__input" placeholder="Номер картки" required
+
+						<form action="#" method="post" class="content__form" id="form">
+							<input type="number" class="form__input _req" placeholder="Номер картки"
 								oninvalid="setCustomValidity(' ')">
-							<input type="email" class="form__input" placeholder="Адреса" required
+							<input type="text" class="form__input _req _email" placeholder="Адреса"
 								oninvalid="setCustomValidity(' ')">
-							<input type="name" class="form__input" placeholder="Ім’я" required
-								oninvalid="setCustomValidity(' ')">
-							<input type="tel" class="form__input phone" placeholder="+38(0__) - ___ - ____" required
+							<input type="name" class="form__input _req" placeholder="Ім’я" oninvalid="setCustomValidity(' ')">
+							<input type="tel" class="form__input phone _req" placeholder="+38 (0__) - ___ - __ - __"
 								oninvalid="setCustomValidity(' ')">
 							<button class="form__button">Активація</button>
 						</form>
@@ -113,9 +115,13 @@
 			</div>
 		</main>
 
+
+		<!--Modal windoww---------------------------------------------------------->
+
 		<section class="modal success">
 			<div class="modal__content">
 				<div class="modal__container">
+					<img src="img/fon-modal.png" alt="blur" class="modal__fon">
 					<div class="modal__images">
 						<span class="close closeseccess">&times;</span>
 						<img src="img/ModalSuccess.png" alt="success">
@@ -130,9 +136,11 @@
 		<section class="modal error">
 			<div class="modal__content">
 				<div class="modal__container">
+					<img src="img/fon-modal.png" alt="blur" class="modal__fon">
 					<div class="modal__images">
 						<span class="close closeerror">&times;</span>
 						<img src="img/modalError.png" alt="success">
+
 					</div>
 					<div class="modal__text-block">
 						<p class="modal__text">щось пішло не так, не вдалось активувати картку </p>
