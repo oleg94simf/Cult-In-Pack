@@ -83,6 +83,21 @@
   padding-top: 50px;
 }
 
+input[type="text"]::-moz-placeholder {
+  color: #1d71b8;
+  opacity: 1;
+}
+
+input[type="tel"]::-moz-placeholder {
+  color: #1d71b8;
+  opacity: 1;
+}
+
+input[type="name"]::-moz-placeholder {
+  color: #1d71b8;
+  opacity: 1;
+}
+
 .form__input {
   padding: 10px 20px;
   border: 2px solid #bfe5ec;

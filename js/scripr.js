@@ -40,6 +40,8 @@ if (menuLinks.length > 0) {
 				top: gotoBlockValue,
 				behavior: 'smooth'
 			});
+
+
 			e.preventDefault();
 		}
 
@@ -298,13 +300,13 @@ $(function () {
 
 /***********************************mobile buttom */
 
-/* //caed carddesctop 1
+/* //caed mobileCard 1
 $(function () {
 
 	jQuery.fn.autoscroll = function (selector) {
 		$('html, body').animate({
-			scrollTop: $(".main").height() + 20
-		}, 500);
+			scrollTop: $(".main").height() + 50
+		}, 1500);
 	}
 
 	$('.buttommobile1').on('click', function () {
@@ -312,14 +314,13 @@ $(function () {
 	});
 })
 
-
-//caed carddesctop 2
+//caed mobileCard 2
 $(function () {
 
 	jQuery.fn.autoscroll = function (selector) {
 		$('html, body').animate({
-			scrollTop: $(".main").height() - 2950
-		}, 500);
+			scrollTop: $(".main").height() - 50
+		}, 1500);
 	}
 
 	$('.buttommobile2').on('click', function () {
@@ -328,13 +329,13 @@ $(function () {
 })
 
 
-//caed carddesctop 3
+//caed mobileCard 3
 $(function () {
 
 	jQuery.fn.autoscroll = function (selector) {
 		$('html, body').animate({
-			scrollTop: $(".main").height() - 650
-		}, 500);
+			scrollTop: $(".main").height() - 50
+		}, 1500);
 	}
 
 	$('.buttommobile3').on('click', function () {
@@ -342,6 +343,7 @@ $(function () {
 	});
 })
  */
+
 
 $(document).ready(function () {
 	$(".scroll").on("click", function (event) {
@@ -357,6 +359,8 @@ $(document).ready(function () {
 	});
 
 });
+
+
 
 
 /*form Ssity********************************************************

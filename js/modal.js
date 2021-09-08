@@ -1,5 +1,18 @@
 "use strict"
 
+
+$(function ($) {
+	$(".phone").mask("+38 (099) - 999 - 99 - 99");
+});
+
+
+//numberInput
+
+const changeHedler = e => {
+	const value = e.value
+	e.value = value.replace(/\D/g, '');
+}
+
 ///modal-window
 
 
@@ -8,11 +21,8 @@ function modalWindowError() {
 	const error = document.querySelector('.error');
 	const closeerror = document.querySelector('.closeerror');
 
-	if (buttomActive) {
-		buttomActive.addEventListener('click', function () {
-			error.classList.add('__active-modal');
-		})
-	}
+	error.classList.add('__active-modal');
+
 
 	if (closeerror) {
 		closeerror.addEventListener('click', function () {
@@ -29,12 +39,9 @@ function modalWindowSuccess() {
 	const success = document.querySelector('.success');
 	const closeseccess = document.querySelector('.closeseccess');
 
+	success.classList.add('__active-modal');
 
-	if (buttomActive) {
-		buttomActive.addEventListener('click', function () {
-			success.classList.add('__active-modal');
-		})
-	}
+
 
 	if (closeseccess) {
 		closeseccess.addEventListener('click', function () {
@@ -78,12 +85,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		let error = formValidate(form);
 		if (error === 0) {
+			modalWindowError()
 
-			modalWindowSuccess();
+			form.reset();
 
+
+		} else {
 
 		}
 	}
+
+
+
 
 	function formValidate(form) {
 		let error = 0;
@@ -127,3 +140,5 @@ document.addEventListener('DOMContentLoaded', function () {
 		return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
 	}
 });
+
+

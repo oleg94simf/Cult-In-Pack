@@ -9,11 +9,7 @@
 	<link rel="stylesheet" href="CSS/activation.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
-	<script>
-		$(function ($) {
-			$(".phone").mask("+38 (099) - 999 - 99 - 99");
-		});
-	</script>
+
 
 	<title>Культ пакет</title>
 </head>
@@ -100,9 +96,9 @@
 						</div>
 
 						<form action="#" method="post" class="content__form" id="form">
-							<input type="number" class="form__input _req" placeholder="Номер картки"
-								oninvalid="setCustomValidity(' ')">
-							<input type="text" class="form__input _req _email" placeholder="Адреса"
+							<input type="text" class="form__input _req" placeholder="Номер картки"
+								oninvalid="setCustomValidity(' ')" oninput="changeHedler(this)">
+							<input type="text" class="form__input  _req _email" placeholder="Адреса"
 								oninvalid="setCustomValidity(' ')">
 							<input type="name" class="form__input _req" placeholder="Ім’я" oninvalid="setCustomValidity(' ')">
 							<input type="tel" class="form__input phone _req" placeholder="+38 (0__) - ___ - __ - __"
