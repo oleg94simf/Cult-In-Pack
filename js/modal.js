@@ -121,19 +121,12 @@ document.addEventListener('DOMContentLoaded', function () {
 				}
 			}
 
-			/* 		input.oninput = function () {
-		
-					};
-		 */
-			input.onfocus = function () {
 
+			input.onfocus = function () {
 				if (this.classList.contains('_error')) {
 					// удаляем индикатор ошибки, т.к. пользователь хочет ввести данные заново
 					this.classList.remove('_error');
-
 				}
-
-
 			};
 
 		}
@@ -143,12 +136,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	function formAddError(input) {
-
 		input.classList.add('_error');
 	}
 
 	function formRemoveError(input) {
-
 		input.classList.remove('_error');
 
 	}
