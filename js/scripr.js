@@ -240,7 +240,7 @@ bottomMobile3.onclick = (event) => {
 	if (event.target.classList.contains('_active-buttom')) {
 		bottomMobile2.classList.remove('_active-buttom');
 		buttomSub2.classList.remove('_activ-subCards');
-		bottomMobile2.classList.remove('_activ-width');
+		cards2.classList.remove('_activ-width');
 		mobilecard2.classList.remove('_active-mobile');
 
 		bottomMobile1.classList.remove('_active-buttom');
@@ -360,6 +360,18 @@ $(document).ready(function () {
 
 });
 
+
+let cardsbottommobiles = document.querySelectorAll('.cardsbottommobile');
+
+for (let i = 0; i < cardsbottommobiles.length; i++) {
+	let cardsbottommobile = cardsbottommobiles[i];
+
+	cardsbottommobile.addEventListener('click', function () {
+		setTimeout(function () {
+			cardsbottommobile.scrollIntoView({ behavior: 'smooth' });
+		}, 100);
+	})
+}
 
 
 

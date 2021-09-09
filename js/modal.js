@@ -92,7 +92,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		} else {
 
+
 		}
+
+
 	}
 
 
@@ -118,6 +121,20 @@ document.addEventListener('DOMContentLoaded', function () {
 				}
 			}
 
+			/* 		input.oninput = function () {
+		
+					};
+		 */
+			input.onfocus = function () {
+
+				if (this.classList.contains('_error')) {
+					// удаляем индикатор ошибки, т.к. пользователь хочет ввести данные заново
+					this.classList.remove('_error');
+
+				}
+
+
+			};
 
 		}
 
