@@ -253,97 +253,6 @@ bottomMobile3.onclick = (event) => {
 
 
 
-///scrolll
-
-//card desctop 1
-$(function () {
-
-	jQuery.fn.autoscroll = function (selector) {
-		$('html, body').animate({
-			scrollTop: $(".main").height() + 150
-		}, 500);
-	}
-
-	$('.buttomdesctop-1').on('click', function () {
-		$('.buttom-sub1').autoscroll();
-	});
-})
-
-//caed desctop 2
-$(function () {
-
-	jQuery.fn.autoscroll = function (selector) {
-		$('html, body').animate({
-			scrollTop: $(".main").height() + 150
-		}, 500);
-	}
-
-	$('.buttomdesctop2').on('click', function () {
-		$('.buttom-sub2').autoscroll();
-	});
-})
-
-
-//caed carddesctop 3
-$(function () {
-
-	jQuery.fn.autoscroll = function (selector) {
-		$('html, body').animate({
-			scrollTop: $(".main").height() + 150
-		}, 500);
-	}
-
-	$('.buttomdesctop3').on('click', function () {
-		$('.buttom-sub3').autoscroll();
-	});
-})
-
-/***********************************mobile buttom */
-
-/* //caed mobileCard 1
-$(function () {
-
-	jQuery.fn.autoscroll = function (selector) {
-		$('html, body').animate({
-			scrollTop: $(".main").height() + 50
-		}, 1500);
-	}
-
-	$('.buttommobile1').on('click', function () {
-		$('.buttom-sub1').autoscroll();
-	});
-})
-
-//caed mobileCard 2
-$(function () {
-
-	jQuery.fn.autoscroll = function (selector) {
-		$('html, body').animate({
-			scrollTop: $(".main").height() - 50
-		}, 1500);
-	}
-
-	$('.buttommobile2').on('click', function () {
-		$('.buttom-sub2').autoscroll();
-	});
-})
-
-
-//caed mobileCard 3
-$(function () {
-
-	jQuery.fn.autoscroll = function (selector) {
-		$('html, body').animate({
-			scrollTop: $(".main").height() - 50
-		}, 1500);
-	}
-
-	$('.buttommobile3').on('click', function () {
-		$('.buttom-sub3').autoscroll();
-	});
-})
- */
-
 
 $(document).ready(function () {
 	$(".scroll").on("click", function (event) {
@@ -360,19 +269,38 @@ $(document).ready(function () {
 
 });
 
+document.querySelector('.buttomdesctop-1').addEventListener('click', function (e) {
+	e.preventDefault();
+	document.querySelector('.buttom-sub1').scrollIntoView({ behavior: 'smooth' });
+});
 
-let cardsbottommobiles = document.querySelectorAll('.cardsbottommobile');
+document.querySelector('.buttomdesctop2').addEventListener('click', function (e) {
+	e.preventDefault();
+	document.querySelector('.buttom-sub2').scrollIntoView({ behavior: 'smooth' });
+});
 
-for (let i = 0; i < cardsbottommobiles.length; i++) {
-	let cardsbottommobile = cardsbottommobiles[i];
 
-	cardsbottommobile.addEventListener('click', function () {
-		setTimeout(function () {
-			cardsbottommobile.scrollIntoView({ behavior: 'smooth' });
-		}, 100);
-	})
-}
+document.querySelector('.buttomdesctop3').addEventListener('click', function (e) {
+	e.preventDefault();
+	document.querySelector('.buttom-sub3').scrollIntoView({ behavior: 'smooth' });
+});
 
+///mobileScroll******************************************************************
+document.querySelector('.buttommobile1').addEventListener('click', function (e) {
+	e.preventDefault();
+	document.querySelector('.buttom-mobile1').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.querySelector('.buttommobile2').addEventListener('click', function (e) {
+	e.preventDefault();
+	document.querySelector('.buttom-mobile2').scrollIntoView({ behavior: 'smooth' });
+});
+
+
+document.querySelector('.buttommobile3').addEventListener('click', function (e) {
+	e.preventDefault();
+	document.querySelector('.buttom-mobile3').scrollIntoView({ behavior: 'smooth' });
+});
 
 
 /*form Ssity********************************************************
