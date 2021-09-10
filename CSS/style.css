@@ -508,6 +508,7 @@ body._lock {
   }
   .header .header__form {
     position: relative;
+    left: -5px;
     top: 15px;
     display: block;
     padding: 10px 0px 10px 20px;
@@ -516,7 +517,7 @@ body._lock {
     margin: 30px auto 0 auto;
   }
   .header .header__form .header__input {
-    width: 250px;
+    width: 255px;
     padding: 10px 20px;
     border: 2px solid #bfe5ec;
     border-radius: 15px;
@@ -600,7 +601,7 @@ body._lock {
   .header .header__logo {
     position: static;
     margin-right: 0;
-    margin-left: 0;
+    margin-left: 5px;
   }
   .header .header__activation {
     margin-right: 0px;
@@ -628,6 +629,8 @@ body._lock {
   }
   .header .header__list {
     margin-top: 120px;
+    position: relative;
+    left: 6px;
   }
   .header .header__link {
     width: 338px;
@@ -649,13 +652,13 @@ body._lock {
   .header .header__form {
     position: relative;
     top: 0;
-    left: -6px;
+    left: 0px;
     display: block;
     padding: 15px 8px 15px 15px;
     margin: 30px auto 0 auto;
   }
   .header .header__form .header__input {
-    width: 200px;
+    width: 197px;
     padding: 11px 10px;
     border: 2px solid #bfe5ec;
     font-size: 20px;
