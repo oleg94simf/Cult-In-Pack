@@ -254,7 +254,7 @@ bottomMobile3.onclick = (event) => {
 
 
 
-$(document).ready(function () {
+/* $(document).ready(function () {
 	$(".scroll").on("click", function (event) {
 		let hash = $(this).attr("data-target"),
 			target = $("#" + hash);
@@ -267,7 +267,7 @@ $(document).ready(function () {
 
 	});
 
-});
+}); */
 
 document.querySelector('.buttomdesctop-1').addEventListener('click', function (e) {
 	e.preventDefault();

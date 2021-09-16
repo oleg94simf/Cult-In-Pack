@@ -542,6 +542,7 @@ body._lock {
     color: #1d71b8;
   }
   .header .header__form .header__button {
+    padding: 14px 15px 14px 14px;
     border: none;
     position: relative;
     right: 30px;

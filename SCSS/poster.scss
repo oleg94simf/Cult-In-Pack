@@ -1,0 +1,337 @@
+.main__poster {
+	margin: 90px 20px 0 20px;
+}
+
+.Poster {
+	&__circle {
+		position: relative;
+		z-index: -1;
+	}
+}
+.circle-1 {
+	width: 293px;
+	height: 293px;
+	left: 0;
+}
+.circle {
+	position: absolute;
+}
+.circle-2 {
+	width: 286px;
+	height: 291px;
+	top: 0px;
+}
+.circle-3 {
+	width: 358px;
+	height: 358px;
+	left: 350px;
+	top: 300px;
+}
+.circle-4 {
+	width: 286px;
+	height: 291px;
+	left: -100px;
+	top: 700px;
+}
+.circle-5 {
+	width: 168px;
+	height: 170px;
+	right: -60px;
+	top: 250px;
+}
+.circle-6 {
+	width: 129px;
+	height: 131px;
+	top: 1400px;
+	left: 300px;
+}
+.circle-7 {
+	top: 1050px;
+	left: 500px;
+}
+.poster {
+	&__container {
+		display: flex;
+		border: 2px solid #fff;
+		border-radius: 20px;
+		margin-top: 30px;
+	}
+
+	&__img {
+		flex: 0 1 25%;
+		position: relative;
+		background: rgba(255, 255, 255, 0.4);
+		border-radius: 20px 0 0 20px;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		& .poster__icon {
+			border-radius: 20px;
+			width: 100%;
+			&.icon {
+				position: relative;
+				width: auto;
+				height: auto;
+				border-radius: 0px;
+			}
+		}
+	}
+
+	&__content {
+		flex: 0 1 50%;
+		background: rgba(255, 255, 255, 0.6);
+		padding-bottom: 22px;
+	}
+
+	&__title {
+		padding: 30px 30px 20px 30px;
+		max-width: 558px;
+	}
+
+	&__text {
+		padding: 0 30px 10px 30px;
+		font-size: 16px;
+		line-height: 18px;
+		text-transform: capitalize;
+	}
+
+	&__link {
+		flex: 0 1 25%;
+	}
+
+	&__mobile-img {
+		display: none;
+	}
+	&__phone {
+		display: block;
+		font-family: "Lugatype";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 23px;
+		text-transform: uppercase;
+		color: #1d71b8;
+		position: relative;
+		margin: 20px 0 0 48px;
+		flex: 1 1 auto;
+		&::before {
+			content: "";
+			background: url(../img/phone.svg);
+			width: 21px;
+			height: 21px;
+			position: absolute;
+			left: -27px;
+			top: -3px;
+		}
+	}
+	&__link-geo {
+		background: rgba(255, 255, 255, 0.9);
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		border-radius: 0 20px 20px 0;
+
+		.link-geo__link {
+			background: #1d71b8;
+			box-shadow: 0px 14px 21px rgba(29, 113, 184, 0.35);
+			border-radius: 10px;
+			text-align: center;
+			margin: 30px 15px;
+			font-family: "Lugatype";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 23px;
+			color: #fff;
+			padding: 9px 7px;
+			display: block;
+			position: relative;
+			bottom: 0;
+			transform: scale(1);
+			transition: all 0.3s;
+			&:active {
+				transform: scale(0.9);
+			}
+		}
+	}
+
+	&__geo {
+		font-family: "Lugatype";
+		font-style: normal;
+		font-weight: normal;
+		position: relative;
+		margin: 32px 0 0 42px;
+		font-size: 20px;
+		line-height: 23px;
+		text-transform: uppercase;
+		color: #1d71b8;
+		flex: 1 1 auto;
+		&::before {
+			content: "";
+			background: url(../img/geo.svg);
+			width: 21px;
+			height: 26px;
+			position: absolute;
+			left: -27px;
+			top: -3px;
+		}
+	}
+}
+
+.link-geo__contact {
+	flex: 1 1 auto;
+}
+
+@media (max-width: 880.98px) {
+	.circle-1 {
+		width: 293px;
+		height: 293px;
+		left: 600px;
+		top: 1450px;
+	}
+	.circle {
+		position: absolute;
+	}
+	.circle-2 {
+		width: 286px;
+		height: 291px;
+		left: 200px;
+		top: 150px;
+	}
+	.circle-3 {
+		width: 293px;
+		height: 293px;
+		left: 550px;
+		top: 700px;
+	}
+	.circle-4 {
+		width: 293px;
+		height: 293px;
+		left: -100px;
+		top: 800px;
+	}
+	.circle-5 {
+		width: 72px;
+		height: 72px;
+		left: 0;
+		top: 0;
+	}
+	.circle-6 {
+		width: 129px;
+		height: 131px;
+		top: 1400px;
+		left: 300px;
+	}
+	.circle-7 {
+		width: 293px;
+		height: 293px;
+		top: 1650px;
+		left: -50px;
+	}
+	.main__poster {
+		margin-top: 120px;
+	}
+	.poster {
+		&__img {
+			display: none;
+		}
+
+		&__content {
+			flex: 0 1 70%;
+		}
+
+		&__title {
+			padding: 30px 24px 30px 30px;
+		}
+
+		&__text {
+			padding: 0px 79px 10px 30px;
+		}
+
+		&__link {
+			flex: 0 1 30%;
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__mobile-img {
+			display: block;
+			display: flex;
+			width: 100%;
+			min-height: 226px;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			& img {
+				width: 100%;
+				position: absolute;
+				height: 100%;
+				&.icon {
+					position: relative;
+					width: auto;
+					height: auto;
+				}
+			}
+		}
+
+		&__link-geo {
+			height: auto;
+			flex: 1 1 auto;
+			border-radius: 0 0 20px 0;
+		}
+
+		&__geo {
+			margin-left: 33px;
+		}
+
+		&__phone {
+			font-size: 18px;
+			line-height: 21px;
+			margin-left: 35px;
+		}
+	}
+}
+
+@media (max-width: 650.98px) {
+	.circle {
+		position: absolute;
+		display: none;
+	}
+	.poster {
+		&__container {
+			display: flex;
+			flex-direction: column;
+			max-width: 338px;
+		}
+
+		&__img {
+			display: block;
+			position: relative;
+			min-height: 250px;
+			display: flex;
+			border-radius: 20px 20px 0 0;
+		}
+
+		&__title {
+			padding: 20px 14px;
+		}
+
+		&__text {
+			padding: 0 14px;
+		}
+
+		&__mobile-img {
+			display: none;
+		}
+
+		&__link-geo {
+			border-radius: 0 0 20px 20px;
+		}
+	}
+
+	.poster__icon {
+		width: 100%;
+		height: 100%;
+	}
+}
