@@ -150,3 +150,55 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+
+
+/*  let check = document.querySelector('.checkbox__button');
+let content = document.querySelector('.content');
+let box = document.querySelector('.checkbox');
+
+check.addEventListener('click', function () {
+	content.classList.remove('blocknone');
+
+	box.classList.remove('block');
+	box.classList.add('blocknone');
+})
+
+ */
+
+$('.checkbox__active').change(function () {
+	$('.checkbox__buttom').prop("disabled", !this.checked);
+}).change()
+
+
+/*************************************
+ * *******************checkbox********
+ *************************************/
+
+/* function checkbox() {
+	const buttonCheckbox = document.querySelector('.checkbox__buttom');
+	const conteinerActivation = document.querySelector('.content');
+	const checkbox = document.querySelector('.checkbox');
+
+	if (buttonCheckbox) {
+		conteinerActivation.classList.remove('__none');
+		checkbox.classList.add('__none');
+	}
+
+} */
+const buttonCheckbox = document.querySelector('.checkbox__buttom');
+
+function checkbox() {
+	const conteinerActivation = document.querySelector('.content');
+	const checkbox = document.querySelector('.checkbox');
+	if (buttonCheckbox) {
+		conteinerActivation.classList.remove('__none');
+		checkbox.classList.add('__none');
+	}
+
+}
+
+buttonCheckbox.addEventListener('click', checkbox);
+
+
+

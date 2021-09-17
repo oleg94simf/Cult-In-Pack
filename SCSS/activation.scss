@@ -5,7 +5,6 @@
 		margin: 0 auto;
 		background: rgba($color: #fff, $alpha: 0.6);
 		border-radius: 20px;
-		padding-bottom: 40px;
 	}
 
 	&__images {
@@ -59,6 +58,7 @@
 .content {
 	width: 422px;
 	margin: 0 auto;
+	padding-bottom: 40px;
 	&__title {
 		max-width: 304px;
 		margin: 0 auto;
@@ -204,7 +204,6 @@ input[type="number"]::-ms-inner-spin-button {
 		margin-top: 110px;
 		&__content {
 			width: 338px;
-			padding-bottom: 30px;
 		}
 
 		&__images {
@@ -405,4 +404,130 @@ input[type="number"]::-ms-inner-spin-button {
 
 .form__input._error {
 	border: 2px solid red;
+}
+
+/***************************************************
+************************CHeckbox*******************/
+
+.checkbox {
+	transform: scale(1);
+	transition: all 3s;
+	height: 656px;
+	background-color: rgba(255, 255, 255, 0.8);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border-radius: 20px;
+
+	&__checked {
+		margin: 0 auto;
+		max-width: 330px;
+	}
+
+	&__active {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+
+		& + label {
+			vertical-align: top;
+			display: inline-flex;
+			align-items: center;
+			user-select: none;
+			display: inline-block;
+			position: relative;
+			left: 50px;
+			&::before {
+				left: -50px;
+				position: absolute;
+				content: "";
+				display: inline-block;
+				width: 39px;
+				height: 39px;
+				flex-shrink: 0;
+				flex-grow: 0;
+				margin-right: 0.5em;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 50% 50%;
+				border: 2px solid #bfe5ec;
+				box-sizing: border-box;
+				border-radius: 10px;
+			}
+		}
+
+		&:checked + label::before {
+			border-color: #0b76ef;
+			background-color: #0b76ef;
+			background-image: url("../img/checkbox.svg");
+		}
+	}
+
+	&__rules {
+		font-family: "Bryndan Write";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 23px;
+		text-transform: capitalize;
+		color: #949494;
+	}
+
+	&__link {
+		margin-left: 5px;
+		text-transform: uppercase;
+		color: #1d6fb5;
+		border-bottom: 1px solid #1d6fb5;
+	}
+
+	&__buttom {
+		margin: 0 69px;
+		padding: 16px;
+		border-radius: 20px;
+		background-color: #1d6fb5;
+		color: #fff;
+		border: none;
+		font-family: Lugatype;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 28px;
+		line-height: 32px;
+		text-align: center;
+		text-transform: uppercase;
+		cursor: pointer;
+		transform: scale(1);
+		transition: all 0.2s;
+		&:active {
+			transform: scale(0.9);
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.checkbox {
+		height: 506px;
+		&__title {
+			font-size: 28px;
+		}
+
+		&__checked {
+			max-width: 250px;
+		}
+
+		&__active {
+			& + label {
+				position: relative;
+				left: 20px;
+			}
+		}
+		&__rules {
+			font-size: 18px;
+		}
+	}
+}
+
+.__none {
+	position: absolute;
+	transform: scale(0);
+	transition: all 0.3s;
 }
