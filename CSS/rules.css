@@ -1,10 +1,21 @@
 .rules__title {
-  margin-top: 80px;
+  margin: 80px 20px 0 20px;
+  color: #1d71b8;
 }
 
 .rules__text {
   white-space: pre-line;
   margin: 58px 20px;
+  color: #616161;
+}
+
+p {
+  text-transform: none;
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 24px;
 }
 
 @media (max-width: 767.98px) {
