@@ -52,12 +52,15 @@
 .poster {
 	&__container {
 		display: flex;
-		border: 2px solid #fff;
+
 		border-radius: 20px;
 		margin-top: 30px;
 	}
 
 	&__img {
+		border: 2px solid #fff;
+		box-sizing: border-box;
+		border-right: none;
 		flex: 0 1 25%;
 		position: relative;
 		background: rgba(255, 255, 255, 0.4);
@@ -79,6 +82,10 @@
 	}
 
 	&__content {
+		border: 2px solid #fff;
+		box-sizing: border-box;
+		border-right: none;
+		border-left: none;
 		flex: 0 1 50%;
 		background: rgba(255, 255, 255, 0.6);
 		padding-bottom: 22px;
@@ -131,6 +138,9 @@
 		display: flex;
 		flex-direction: column;
 		border-radius: 0 20px 20px 0;
+		border: 2px solid #fff;
+		box-sizing: border-box;
+		border-left: none;
 
 		.link-geo__link {
 			background: #1d71b8;
@@ -238,7 +248,11 @@
 		}
 
 		&__content {
+			border: 2px solid #fff;
+			box-sizing: border-box;
+			border-right: none;
 			flex: 0 1 70%;
+			border-radius: 20px 0 0 20px;
 		}
 
 		&__title {
@@ -256,6 +270,11 @@
 		}
 
 		&__mobile-img {
+			border: 2px solid #fff;
+			box-sizing: border-box;
+			border-left: none;
+			border-bottom: none;
+			border-radius: 0 20px 0 0;
 			display: block;
 			display: flex;
 			width: 100%;
@@ -263,10 +282,12 @@
 			justify-content: center;
 			align-items: center;
 			position: relative;
+
 			& img {
 				width: 100%;
 				position: absolute;
 				height: 100%;
+				border-radius: 20px;
 				&.icon {
 					position: relative;
 					width: auto;
@@ -279,6 +300,9 @@
 			height: auto;
 			flex: 1 1 auto;
 			border-radius: 0 0 20px 0;
+			border: 2px solid #fff;
+			box-sizing: border-box;
+			border-top: none;
 		}
 
 		&__geo {
@@ -304,8 +328,17 @@
 			flex-direction: column;
 			max-width: 338px;
 		}
-
+		&__content {
+			border: 2px solid #fff;
+			box-sizing: border-box;
+			border-top: none;
+			border-bottom: none;
+			border-radius: 0;
+		}
 		&__img {
+			border: 2px solid #fff;
+			box-sizing: border-box;
+			border-bottom: none;
 			display: block;
 			position: relative;
 			min-height: 250px;

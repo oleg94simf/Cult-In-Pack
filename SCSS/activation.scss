@@ -411,7 +411,6 @@ input[type="number"]::-ms-inner-spin-button {
 
 .checkbox {
 	transform: scale(1);
-	transition: all 3s;
 	height: 656px;
 	background-color: rgba(255, 255, 255, 0.8);
 	display: flex;
@@ -451,6 +450,33 @@ input[type="number"]::-ms-inner-spin-button {
 				background-position: center center;
 				background-size: 50% 50%;
 				border: 2px solid #bfe5ec;
+				box-sizing: border-box;
+				border-radius: 10px;
+			}
+		}
+
+		& + .active {
+			vertical-align: top;
+			display: inline-flex;
+			align-items: center;
+			user-select: none;
+			display: inline-block;
+			position: relative;
+			left: 50px;
+			&::before {
+				left: -50px;
+				position: absolute;
+				content: "";
+				display: inline-block;
+				width: 39px;
+				height: 39px;
+				flex-shrink: 0;
+				flex-grow: 0;
+				margin-right: 0.5em;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 50% 50%;
+				border: 2px solid red;
 				box-sizing: border-box;
 				border-radius: 10px;
 			}
@@ -529,5 +555,8 @@ input[type="number"]::-ms-inner-spin-button {
 .__none {
 	position: absolute;
 	transform: scale(0);
-	transition: all 0.3s;
+}
+
+input[type="checkbox"].invalid-input + label::before {
+	background-color: red;
 }
