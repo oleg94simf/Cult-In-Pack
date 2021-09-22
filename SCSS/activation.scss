@@ -423,6 +423,10 @@ input[type="number"]::-ms-inner-spin-button {
 		max-width: 330px;
 	}
 
+	&__checked._error label::before {
+		border: 1px solid red;
+	}
+
 	&__active {
 		position: absolute;
 		z-index: -1;

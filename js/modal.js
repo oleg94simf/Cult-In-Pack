@@ -99,8 +99,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 
-
-
 	function formValidate(form) {
 		let error = 0;
 		let formReq = document.querySelectorAll('._req');
@@ -114,6 +112,9 @@ document.addEventListener('DOMContentLoaded', function () {
 					formAddError(input);
 					error++;
 				}
+			} else if (input.getAttribute("type") === "checkbox" && input.checked === false) {
+				formAddError(input);
+				error++;
 			} else {
 				if (input.value === '') {
 					formAddError(input);
@@ -136,10 +137,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	function formAddError(input) {
+		input.parentElement.classList.add('_error')
 		input.classList.add('_error');
 	}
 
 	function formRemoveError(input) {
+		input.parentElement.classList.remove('_error')
 		input.classList.remove('_error');
 
 	}
@@ -160,6 +163,7 @@ document.addEventListener('DOMContentLoaded', function () {
 $('.checkbox__active').change(function () {
 	$('.checkbox__buttom').prop("disabled", !this.checked);
 
+
 	const buttonCheckbox = document.querySelector('.checkbox__buttom');
 	const label = document.querySelector('label');
 
@@ -173,13 +177,8 @@ $('.checkbox__active').change(function () {
 	}
 	buttonCheckbox.addEventListener('click', checkbox);
 
+
 }).change()
-
-
-
-
-
-
 
 
 

@@ -439,6 +439,10 @@ input[type="number"]::-ms-inner-spin-button {
   max-width: 330px;
 }
 
+.checkbox__checked._error label::before {
+  border: 1px solid red;
+}
+
 .checkbox__active {
   position: absolute;
   z-index: -1;
