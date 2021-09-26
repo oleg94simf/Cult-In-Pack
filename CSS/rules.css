@@ -3,6 +3,11 @@
   color: #1d71b8;
 }
 
+.rules__sub-title {
+  margin: 20px 20px 0 20px;
+  color: #1d71b8;
+}
+
 .rules__text {
   white-space: pre-line;
   margin: 58px 20px;

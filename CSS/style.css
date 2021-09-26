@@ -698,7 +698,7 @@ body._lock {
   font-family: "Lugatype";
   font-style: normal;
   font-weight: normal;
-  font-size: 110px;
+  font-size: 90px;
   line-height: 126px;
   text-transform: uppercase;
   color: #1d71b8;
@@ -714,18 +714,20 @@ body._lock {
 }
 
 .header__body .header__title-1 {
-  padding: 137px 0 0 100px;
+  padding: 37px 0 0 100px;
   position: relative;
+  z-index: 1;
 }
 
 .header__body .header__title-2 {
   position: relative;
-  padding: 30px 0 0 190px;
+  padding: 130px 0 0 100px;
+  z-index: 1;
 }
 
 .header__body .header__title-3 {
   position: relative;
-  padding: 160px 70px 0 0;
+  padding: 260px 70px 0 0;
   z-index: 2;
   text-align: right;
 }
@@ -736,17 +738,18 @@ body._lock {
 
 @media (max-width: 1399.98px) {
   .header__body .header__title-1 {
-    padding: 185px 0 0 30px;
+    padding: 85px 0 0 30px;
+    z-index: 1;
   }
   .header__body .header__title-2 {
-    padding: 27px 0 0 150px;
+    padding: 127px 0 0 30px;
   }
   .header__body .header__title-3 {
-    padding: 120px 70px 0 0;
+    padding: 260px 70px 0 0;
     z-index: 2;
   }
   .header__body .title {
-    font-size: 100px;
+    font-size: 90px;
     line-height: 110px;
   }
 }
@@ -758,10 +761,10 @@ body._lock {
     text-align: center;
   }
   .header__body .header__title-2 {
-    padding: 130px 0 0 100px;
+    padding: 130px 0 0 20px;
   }
   .header__body .header__title-3 {
-    padding: 120px 40px 0 0;
+    padding: 220px 40px 0 0;
     z-index: 2;
   }
   .header__body .title {
@@ -780,14 +783,14 @@ body._lock {
     text-align: center;
   }
   .header__body .header__title-2 {
-    padding: 70px 0 0 50px;
+    padding: 70px 0 0 10px;
   }
   .header__body .header__title-3 {
-    padding: 120px 40px 0 0;
+    padding: 180px 40px 0 0;
     z-index: 2;
   }
   .header__body .title {
-    font-size: 90px;
+    font-size: 80px;
     line-height: 100px;
   }
 }
@@ -806,20 +809,20 @@ body._lock {
   }
   .header__body .header__title-1 {
     padding: 50px 0 0px 39px;
-    z-index: 0;
+    z-index: 1;
     text-align: left;
   }
   .header__body .header__title-2 {
     padding: 290px 0 0 20px;
-    z-index: 0;
+    z-index: 1;
   }
   .header__body .header__title-3 {
     padding: 0px 5px 0 0;
-    z-index: 0;
+    z-index: 1;
     top: -25px;
   }
   .header__body .title {
-    font-size: 63px;
+    font-size: 50px;
     line-height: 80px;
   }
 }
@@ -836,11 +839,11 @@ body._lock {
     text-align: left;
   }
   .header__body .header__title-2 {
-    padding: 200px 0 0 10px;
-    z-index: 0;
+    padding: 170px 0 0 10px;
+    z-index: 1;
   }
   .header__body .header__title-3 {
-    padding: 0px 0 0 0;
+    padding: 100px 0 0 0;
     z-index: 1;
     top: -10px;
   }
@@ -854,6 +857,10 @@ body._lock {
 .container-content {
   max-width: 1145px;
   margin: 0 auto;
+}
+
+.link-info {
+  font-size: 18px;
 }
 
 .love {
@@ -921,11 +928,24 @@ body._lock {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.6);
   border: 2px solid #fff;
   border-radius: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about__man .about__people {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .about__wooman {
@@ -940,11 +960,17 @@ body._lock {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.6);
   border: 2px solid #fff;
   border-radius: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.about__wooman .about__people {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .contact__content {
@@ -1093,11 +1119,15 @@ body._lock {
   font-family: "Bryndan Write";
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
   color: #1d71b8;
+}
+
+.contact__number {
+  padding-left: 0px;
 }
 
 .geo-img {
